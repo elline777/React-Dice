@@ -1,6 +1,6 @@
 # Dice React App
 
-![Alt text](Screenshot.png)
+![Dice React App](Screenshot.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
