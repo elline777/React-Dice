@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Cube from './components/Cube';
 import './App.css';
 
 function App() {
+  const [num, setNum] = useState(1);
+  function generateRandomNum() {
+    const randomNum = Math.ceil(Math.random() * 6);
+    console.log(randomNum);
+    setNum(randomNum);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cube num={num} />
+      <button onClick={generateRandomNum}>New Cube</button>
     </div>
   );
 }
 
 export default App;
+
