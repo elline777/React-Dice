@@ -5,8 +5,7 @@ import './App.css';
 function App() {
   const [num, setNum] = useState(1);
   function generateRandomNum() {
-    const randomNum = Math.ceil(Math.random() * 6);
-    console.log(randomNum);
+    const randomNum = Math.ceil(Math.random() * 6);    
     setNum(randomNum);
   }
 
